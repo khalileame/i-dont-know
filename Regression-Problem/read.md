@@ -1,4 +1,8 @@
-To use the model whenever you want , just open a jupyter notebook, give the data that you have and then send it . Then you ll have the reply from the app deployed in heroku
+To use the model whenever you want , just open a jupyter notebook, give the data that you have and then send it . 
+Then you ll have the reply from the app deployed in heroku
+
+```python
+
 vehicle_config = {
     'Cylinders': [4, 6, 8],
     'Displacement': [155.0, 160.0, 165.5],
@@ -14,3 +18,5 @@ url ="https://fuel-efficiency-predicti.herokuapp.com/"
 r= requests.post(url,json =vehicle_config)
 r.text.strip()
 print(r)
+
+```
